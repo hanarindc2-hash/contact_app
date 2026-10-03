@@ -49,7 +49,7 @@ def confirm(question):
           return True
      answer = answer.lower()
      if answer == 'y':
-          True
+          return True
      else:
           return False
 
