@@ -25,19 +25,18 @@ def select_menu():
 
 
 def print_contact():
-    for contact in contacts:
-        # print(f"이름:{contact['name']}")
-        # print(f"휴대전화:{contact['phone']}")
-        # print(f"집 주소:{contact['address']}")
-        # print(f"e- mail:{contact['email']}")
-        print(f"no.", "이름", "휴대전화    ", "집 주소", "e-mail") # no. 이름   휴대전화 집 주소 e-mail
-        print("--------------------------------")
-        for index, values in enumerate(contacts):
-            print(
-                f"{index+1} {values['name']} {values['phone']} {values['address']} {values['email']}"
-            )                                                 # 1   홍길동 111-1111-1111 서울시 hong00@gmail.com
-        print("--------------------------------")
-        print(len(contacts))
+    # print(f"이름:{contact['name']}")
+    # print(f"휴대전화:{contact['phone']}")
+    # print(f"집 주소:{contact['address']}")
+    # print(f"e- mail:{contact['email']}")
+    print(f"no.", "이름", "휴대전화    ", "집 주소", "e-mail") # no. 이름   휴대전화 집 주소 e-mail
+    print("--------------------------------")
+    for index, values in enumerate(contacts):
+        print(
+            f"{index+1} {values['name']} {values['phone']} {values['address']} {values['email']}"
+        )                                                 # 1   홍길동 111-1111-1111 서울시 hong00@gmail.com
+    print("--------------------------------")
+    print(len(contacts))
 
 
 def input_contact():
