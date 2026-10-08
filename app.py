@@ -47,7 +47,7 @@ def input_contact():
     address = input("집 주소: ")
     email = input("e- mail: ")
 
-    contact = {"name:name", "phone:phone", "address:address", "email:email"}
+    contact = {"name": name, "phone": phone, "address": address, "email": email}
     return contact
 
 
@@ -58,6 +58,12 @@ def add_contact():
 
 def del_contact():
     print("삭제 실행")
+    print_contact()
+    index = int(input("삭제할 번호를 입력하세요: ")) - 1
+    if 0 <= index < len(contacts):
+        contacts.pop(index)
+    else:
+        print("잘못된 번호입니다.")
 
 
 def confirm(question):
